@@ -4,6 +4,8 @@ public class Variaveis {
         String meuNome = "Diego";
         int minhaIdade = 24;
         boolean maiorDeIdade = true;
+        char sexo = 'M';
+        double peso = 62.9;
 
         System.out.println("Vamos fazer algumas validações");
         System.out.println("Qual seu nome?");
