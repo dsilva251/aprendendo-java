@@ -15,6 +15,8 @@ public class Variaveis {
         System.out.println("É maior de idade? ");
         System.out.println(maiorDeIdade);
         System.out.println("VALIDADO");
+        System.out.println(sexo);
+        System.out.println(peso);
     }
 }
 
