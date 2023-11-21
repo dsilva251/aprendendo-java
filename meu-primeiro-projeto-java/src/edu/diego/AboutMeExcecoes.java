@@ -1,9 +1,13 @@
-package edu.diego.primeirasemana;
+package edu.diego;
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class aboutMe {
+public class AboutMeExcecoes {
+
     public static void main(String[] args) {
+        
+        try{
         //criando o objeto scanner
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         
@@ -24,9 +28,11 @@ public class aboutMe {
         System.out.println("Ola, me chamo " + nome + " " + sobrenome);
         System.out.println("Tenho " + idade + " anos ");
         System.out.println("Minha altura é " + altura + "cm ");
-        
-    
+        scanner.close();
+        }
+        catch (InputMismatchException e){
+            System.err.println("O campo Idade e Altura só aceitam numeros.");
+        }
 
-
-    }
+}
 }
